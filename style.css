@@ -1,10 +1,42 @@
 #container {
   width: 70vw;
   margin: auto;
-  background-color: rgb(246, 182, 255);
-  color: rgb(255, 0, 221);
+  background-color: rgb(53, 153, 187);
+  color: white;
   text-align: center;
   padding: 15px;
   border-radius: 10px;
   margin-top: 80px;
 }
+
+#todo-list li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 0;
+  text-align: left;
+  color: white;
+  padding: 5px 10px;
+  background-color: rgb(6, 77, 158);
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#todo-list {
+  padding: 0;
+}
+
+input {
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  justify-content: space-between;
+}
+
+/* button {
+  height: 25px;
+  color: black;
+  background-color: rgb(247, 124, 231);
+  border-radius: 10px;
+  border: none;
+} */
