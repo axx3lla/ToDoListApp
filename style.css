@@ -1,0 +1,10 @@
+#container {
+  width: 70vw;
+  margin: auto;
+  background-color: rgb(246, 182, 255);
+  color: rgb(255, 0, 221);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
