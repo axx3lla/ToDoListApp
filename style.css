@@ -34,9 +34,11 @@
 }
 
 input {
-  border-radius: 10px;
-  border: 1px solid #4f5053;
-  height: 20px;
+  border-radius: 20px;
+  /* border: 1px solid #4f5053; */
+  border: none;
+  height: 60px;
+  width: 30vw;
 }
 
 .delete-button {
@@ -77,4 +79,11 @@ input {
 
 .line-through {
   text-decoration: line-through;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: -1;
 }

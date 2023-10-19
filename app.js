@@ -4,7 +4,9 @@ const buttonElement = document.querySelector("button");
 const listElement = document.getElementById("todo-list");
 
 inputElement.addEventListener("keyup", enableAddButton);
+inputElement.addEventListener("keyup", enterItems);
 buttonElement.addEventListener("click", onAddToDo);
+buttonElement.addEventListener("keyup", onAddToDo);
 
 function enableAddButton() {
   if (inputElement.value.trim().length > 0) buttonElement.disabled = false;
@@ -15,13 +17,15 @@ function enableAddButton() {
 //     buttonElement.disabled = input.value.length === 0
 // }
 
+function enterItems(e) {
+  if (e.key === "Enter") onAddToDo();
+}
+
 function onAddToDo() {
   const li = createListItem(inputElement.value);
   listElement.appendChild(li);
   clearInput();
 }
-
-// vezi cod Alin- functie
 
 function createListItem(name) {
   const li = document.createElement("li");
