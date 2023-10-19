@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link />
+
+    <!-- @import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="container">
-      <h1>To-Do List</h1>
+      <h1 class="h1-title">
+        <span class="material-symbols-outlined"> schedule </span>To-Do List
+      </h1>
+      <h3 class="subtitle">
+        Help you get organized and performe tasks much faster.
+      </h3>
+
       <input type="text" id="todo-input" />
-      <button id="add-task" disabled>Add</button>
+      <button id="add-task" disabled>+</button>
       <ul id="todo-list"></ul>
     </div>
 

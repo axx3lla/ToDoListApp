@@ -16,11 +16,33 @@ function enableAddButton() {
 // }
 
 function onAddToDo() {
-  let listItem = document.createElement("li");
-  listItem.innerHTML = inputElement.value;
-  listElement.appendChild(listItem);
+  const li = createListItem(inputElement.value);
+  listElement.appendChild(li);
+  clearInput();
+}
+
+// vezi cod Alin- functie
+
+function createListItem(name) {
+  const li = document.createElement("li");
+  const title = document.createElement("p");
+  title.textContent = name;
+
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "x";
+  deleteButton.classList.add("delete-button");
+  deleteButton.addEventListener("click", onDeleteToDo);
+
+  li.appendChild(title);
+  li.appendChild(deleteButton);
+  return li;
+}
+
+function clearInput() {
   inputElement.value = "";
   buttonElement.disabled = true;
 }
 
-// vezi cod Alin- functie
+function onDeleteToDo(e) {
+  e.target.parentElement.remove();
+}
